@@ -8,9 +8,9 @@ namespace CadastrosGerais.Repository
 {
     public interface INotaAvaliacaoRepository
     {
-        string AvaliacaooAdd(NotaAvaliacaoModel dados);
-        string AvaliacaoUpd(NotaAvaliacaoModel dados);
-        string AvaliacaoDel(int id);
-        IEnumerable<NotaAvaliacaoModel> AvaliacaoGetAll();
+        string NotaAvaliacaoAdd(NotaAvaliacaoModel dados);
+        string NotaAvaliacaoUpd(NotaAvaliacaoModel dados);
+        string NotaAvaliacaoDel(int id);
+        IEnumerable<NotaAvaliacaoModel> NotaAvaliacaoGetAll();
     }
 }

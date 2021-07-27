@@ -8,9 +8,9 @@ namespace CadastrosGerais.Repository
 {
     public interface ITipoEstabelecimentoRepository
     {
-        string AvaliacaooAdd(TipoEstabelecimentoModel dados);
-        string AvaliacaoUpd(TipoEstabelecimentoModel dados);
-        string AvaliacaoDel(int id);
-        IEnumerable<TipoEstabelecimentoModel> AvaliacaoGetAll();
+        string TipoEstabelecimentoAdd(TipoEstabelecimentoModel dados);
+        string TipoEstabelecimentoUpd(TipoEstabelecimentoModel dados);
+        string TipoEstabelecimentoDel(int id);
+        IEnumerable<TipoEstabelecimentoModel> TipoEstabelecimentoGetAll();
     }
 }

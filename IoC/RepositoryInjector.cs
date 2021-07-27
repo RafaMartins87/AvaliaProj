@@ -13,6 +13,9 @@ namespace CadastrosGerais.IoC
         {
             services.AddScoped<IEstabelecimentoRepository, EstabelecimentoRepository>();
             services.AddScoped<IAvaliacaoRepository, AvaliacaoRepository>();
+            services.AddScoped<INotaAvaliacaoRepository, NotaAvaliacaoRepository>();
+            services.AddScoped<ITipoAvaliacaoRepository, TipoAvaliacaoRepository>();
+            services.AddScoped<ITipoEstabelecimentoRepository, TipoEstabelecimentoRepository>();
         }
 
     }
