@@ -8,7 +8,7 @@ namespace CadastrosGerais.Repository
 {
     public interface IAvaliacaoRepository
     {
-        string AvaliacaooAdd(AvaliacaoModel dados);
+        string AvaliacaoAdd(AvaliacaoModel dados);
         string AvaliacaoUpd(AvaliacaoModel dados);
         string AvaliacaoDel(int id);
         IEnumerable<AvaliacaoModel> AvaliacaoGetAll();

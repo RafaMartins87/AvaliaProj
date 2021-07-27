@@ -12,6 +12,7 @@ namespace CadastrosGerais.IoC
         public static void RegisterRepositories(IServiceCollection services)
         {
             services.AddScoped<IEstabelecimentoRepository, EstabelecimentoRepository>();
+            services.AddScoped<IAvaliacaoRepository, AvaliacaoRepository>();
         }
 
     }

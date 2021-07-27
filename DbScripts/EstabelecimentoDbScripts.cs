@@ -16,7 +16,7 @@ namespace CadastrosGerais.DbScripts
             return new Dictionary<string, object>() { { SQL, dados } };
         }
 
-        public string EstabelecimentoGet()
+        public string EstabelecimentoGetAll()
         {
             string SQL = "SELECT ID, NOME, EMAIL FROM TB_CADASTRO";
 
