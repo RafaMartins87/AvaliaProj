@@ -31,7 +31,6 @@ namespace CadastrosGerais.Controllers
         /// <response code="200">Cadastro inserido</response>
         /// <response code="511">Usuário não autenticado</response>
         /// <response code="500">Erro no método</response>
-        [Authorize]
         [HttpPost("Cria")]
         public IActionResult EstabelecimentoAdd(EstabelecimentoModel dados)
         {
@@ -54,7 +53,6 @@ namespace CadastrosGerais.Controllers
         /// <response code="511">Usuário não autenticado</response>
         /// <response code="500">Erro no método</response>
         /// 
-        [Authorize]
         [HttpGet("GetAll")]
         public IActionResult EstabelecimentoGetAll()
         {
@@ -77,7 +75,6 @@ namespace CadastrosGerais.Controllers
         /// <response code="511">Usuário não autenticado</response>
         /// <response code="500">Erro no método</response>
         /// 
-        [Authorize]
         [HttpPost("Update")]
         public IActionResult EstabelecimentoUpd(EstabelecimentoModel dados)
         {
@@ -100,7 +97,6 @@ namespace CadastrosGerais.Controllers
         /// <response code="511">Usuário não autenticado</response>
         /// <response code="500">Erro no método</response>
         /// 
-        [Authorize]
         [HttpDelete("Deleta")]
         public IActionResult EstabelecimentoDel(int id)
         {

@@ -10,7 +10,8 @@ namespace CadastrosGerais.DbScripts
     {
         public Dictionary<string, object> EstabelecimentoAdd(EstabelecimentoModel dados)
         {
-            string SQL = "INSERT INTO TB_CADASTRO(NOME, EMAIL) VALUES (@NOME, @EMAIL)";
+            string SQL = @"INSERT INTO TB_ESTABELECIMENTO 
+                            VALUES (@NOME_FANTASIA, @CEP, @ENDERECO)";
 
             return new Dictionary<string, object>() { { SQL, dados } };
         }
